@@ -34,4 +34,4 @@ jobs:
       - name: Report dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt --ignore-installed --dry-run --quiet --report
+          pip install --ignore-installed --dry-run --quiet --report - -r requirements.txt
